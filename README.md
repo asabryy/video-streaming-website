@@ -1,2 +1,2 @@
 # video-streaming-website
-Video streaming clone project made with HTML and CSS
+Video streaming clone project using HTML and CSS
