@@ -1,11 +1,75 @@
+<body style="background-color: white;">
 <style>
-    button {
-        background-color: rgb(154, 15, 15);
+    .subscribe-button {
+        background-color: rgb(193, 0, 0);
         color: white;
         border: none;
         height: 35px;
         width: 105;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+        margin-right: 30px;
+        padding-left: 30px;
+        padding-top: 20px;
+        vertical-align: top;
+    }
+
+    .subscribe-button:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+        opacity: 0.5;
+    }
+
+    .subscribe-button-new {
+        background-color: white;
+        border: none;
+        height: 40px;
+        width: 100px;
+        color: black;
+        border-radius: 30px;
+        font-size:  14px;
+        font-weight: 650;
+        border: 0cap;
+        cursor: pointer;
+    }
+
+    .subscribe-button-new:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe-button-new:active {
+        opacity: 0.5;
+    }
+
+    .page-control {
+        background-color: rgb(223, 223, 223);
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 18px;
+        border-color: rgb(220, 220, 220);
+        border:1px solid;
+    }
+
+    .page-links {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 </style>
 
-<button>SUBSCRIBE</button>
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="subscribe-button-new">Subscribe</button>
+<button class="page-control">Back</button>
+<a href="www.google.com" class="page-links">1</a>
+<a href="www.google.com" class="page-links">2</a>
+<a href="www.google.com" class="page-links">3</a>
+<a href="www.google.com" class="page-links">4</a>
+<a href="www.google.com" class="page-links">5</a>
+<button class="page-control">Next</button>
+</body>
