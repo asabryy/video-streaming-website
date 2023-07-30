@@ -1,0 +1,43 @@
+p {
+    font-family: Roboto;
+}
+.video-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 200px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+.footer{
+    color: grey;
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.other-para{
+    color: grey;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+
+.centered-red-text {
+    font-size: 14px;
+    background-color: rgb(245, 65, 65);
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.click-here {
+    margin-left: 20px;
+}
+
+.click-here:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
