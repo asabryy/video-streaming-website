@@ -8,30 +8,61 @@
                 clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                 border-radius: 10px;
                 margin-right: 0px;
+                display: block;
             }
 
             .search-bar {
-
+                display: block;
             }
 
             p {
                 font-family: Arial;
             }
+
+            .video-title{
+                width: 300px;
+            }
+
+            .video-preview {
+                width: 300px;
+                display: inline-block;
+            }
+            .video-author {
+                margin-bottom: 5px;
+            }
+
+            .video-stats {
+                margin-top: 5px;
+            }
+        
         </style>
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
-        <img class="thumbnail" src="thumbnails/assassins_creed_thumbnail.jpg">
-        <p>
-            Assassins Creed 2023 Gameplay - HD
-        </p>
-        <p>
-            Game Reviewer
-        </p>
-        <p>
-            1.4m views &#183; 5 months
-        </p>
-        <img class="thumbnail" src="thumbnails/beautiful_moraine_lake_sunrise-thumbnail.jpg">
+        <div class="video-preview ">
+            <img class="thumbnail" src="thumbnails/assassins_creed_thumbnail.jpg">
+            <p class="video-title">
+                Assassins Creed 2023 Gameplay - HD
+            </p>
+            <p class="video-author">
+                Game Reviewer
+            </p>
+            <p class="video-stats">
+                1.4m views &#183; 5 months
+            </p>
+        </div>
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/beautiful_moraine_lake_sunrise-thumbnail.jpg">
+            <p class="video-title">
+                Lake vlog
+            </p>
+            <p class="video-author">
+                That Vlogger
+            </p>
+            <p class="video-stats">
+                330k views &#183; 2 months
+            </p>
+        </div>
         <img class="thumbnail" src="thumbnails/house_island_2-wallpaper-1280x800.jpg">
     </body>
 </html>
