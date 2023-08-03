@@ -20,7 +20,7 @@
             }
 
             .video-title{
-                width: 300px;
+                
             }
 
             .video-preview {
@@ -36,22 +36,46 @@
             .video-stats {
                 margin-top: 5px;
             }
+
+            .video-info-1{
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+
+            .video-info-2 {
+                display: inline-block;
+                width: 200px
+            }
+
+            .dp-pictures {
+                width: 100%;
+            }
         
         </style>
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
         <div class="video-preview ">
-            <img class="thumbnail" src="thumbnails/assassins_creed_thumbnail.jpg">
-            <p class="video-title">
-                Assassins Creed 2023 Gameplay - HD
-            </p>
-            <p class="video-author">
-                Game Reviewer
-            </p>
-            <p class="video-stats">
-                1.4m views &#183; 5 months
-            </p>
+            <div>
+                <img class="thumbnail" src="thumbnails/assassins_creed_thumbnail.jpg">
+            </div>
+            <div>
+                <div class="video-info-1">
+                    <img class="dp-pictures" src="display-pictures/channel-dp.jpg">
+                </div>
+                <div class="video-info-2">
+                    <p class="video-title">
+                        Assassins Creed 2023 Gameplay - HD
+                    </p>
+                    <p class="video-author">
+                        Game Reviewer
+                    </p>
+                    <p class="video-stats">
+                        1.4m views &#183; 5 months
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="video-preview">
             <img class="thumbnail" src="thumbnails/beautiful_moraine_lake_sunrise-thumbnail.jpg">
