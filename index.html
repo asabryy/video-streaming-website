@@ -2,13 +2,23 @@
 <html>
     <head>
         <title>FooTube.com</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
         <style>
+
+            p{
+                font-family: Roboto, Arial;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
             .thumbnail {
-                width: 300px;
-                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                width: 100%;
+                
                 border-radius: 10px;
                 margin-right: 0px;
-                display: block;
             }
 
             .search-bar {
@@ -20,75 +30,184 @@
             }
 
             .video-title{
-                
+                margin-top: 0px;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 18px;
+                margin-bottom: 13px;
+            }
+
+            .video-info-grid {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 40px;
             }
 
             .video-preview {
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
             }
+            .video-author,
+            .video-stats {
+                margin-top: 5px;
+                color: rgb(99, 99, 99);
+                font-size: 15px;
+            }
+
             .video-author {
                 margin-bottom: 5px;
             }
 
-            .video-stats {
-                margin-top: 5px;
-            }
-
             .video-info-1{
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
             }
 
             .video-info-2 {
-                display: inline-block;
-                width: 200px
             }
 
             .dp-pictures {
-                width: 100%;
+                width: 40px;
+                border-radius: 50px;
+            }
+
+            .thumbnail-row {
+                margin-bottom: 13px;
             }
         
         </style>
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
-        <div class="video-preview ">
-            <div>
-                <img class="thumbnail" src="thumbnails/assassins_creed_thumbnail.jpg">
-            </div>
-            <div>
-                <div class="video-info-1">
-                    <img class="dp-pictures" src="display-pictures/channel-dp.jpg">
+        <div class="video-grid">
+            <div class="video-preview ">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/assassins_creed_thumbnail.jpg">
                 </div>
-                <div class="video-info-2">
-                    <p class="video-title">
-                        Assassins Creed 2023 Gameplay - HD
-                    </p>
-                    <p class="video-author">
-                        Game Reviewer
-                    </p>
-                    <p class="video-stats">
-                        1.4m views &#183; 5 months
-                    </p>
+                <div class="video-info-grid">
+                    <div class="video-info-1">
+                        <img class="dp-pictures" src="display-pictures/channel-dp.jpg">
+                    </div>
+                    <div class="video-info-2">
+                        <p class="video-title">
+                            Assassins Creed 2023 Gameplay
+                        </p>
+                        <p class="video-author">
+                            Game Reviewer
+                        </p>
+                        <p class="video-stats">
+                            1.4m views &#183; 5 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview ">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/space_love-wallpaper_thumbnail.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="video-info-1">
+                        <img class="dp-pictures" src="display-pictures/science-dp.jpg">
+                    </div>
+                    <div class="video-info-2">
+                        <p class="video-title">
+                            Relaxing Music Playlist
+                        </p>
+                        <p class="video-author">
+                            Music Channel
+                        </p>
+                        <p class="video-stats">
+                            500k views &#183; 5 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview ">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/house_island_2-wallpaper-1280x800.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="video-info-1">
+                        <img class="dp-pictures" src="display-pictures/ad-dp.jpg">
+                    </div>
+                    <div class="video-info-2">
+                        <p class="video-title">
+                            House Island Tour
+                        </p>
+                        <p class="video-author">
+                            Houses and stuff
+                        </p>
+                        <p class="video-stats">
+                            52k views &#183; 5 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview ">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/supercar_night_city-wallpaper_thumbnail.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="video-info-1">
+                        <img class="dp-pictures" src="display-pictures/donut-dp.jpg">
+                    </div>
+                    <div class="video-info-2">
+                        <p class="video-title">
+                            McLaren P1 Review | $2 Million Dream Hypercar!
+                        </p>
+                        <p class="video-author">
+                            Car Channel
+                        </p>
+                        <p class="video-stats">
+                            3.5m views &#183; 5 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview ">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/rainforest_waterfall_thumbnail.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="video-info-1">
+                        <img class="dp-pictures" src="display-pictures/code-dp.jpg">
+                    </div>
+                    <div class="video-info-2">
+                        <p class="video-title">
+                            20 Days Building Cabin in the Bamboo Forest - Alone
+                        </p>
+                        <p class="video-author">
+                            primitave tech
+                        </p>
+                        <p class="video-stats">
+                            2.4m views &#183; 5 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview ">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/native_american_art_thumbnail.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="video-info-1">
+                        <img class="dp-pictures" src="display-pictures/channel-dp.jpg">
+                    </div>
+                    <div class="video-info-2">
+                        <p class="video-title">
+                            Extended Trailer | Native America: A Documentary
+                        </p>
+                        <p class="video-author">
+                            NAV
+                        </p>
+                        <p class="video-stats">
+                            249K views &#183; 5 months
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/beautiful_moraine_lake_sunrise-thumbnail.jpg">
-            <p class="video-title">
-                Lake vlog
-            </p>
-            <p class="video-author">
-                That Vlogger
-            </p>
-            <p class="video-stats">
-                330k views &#183; 2 months
-            </p>
-        </div>
-        <img class="thumbnail" src="thumbnails/house_island_2-wallpaper-1280x800.jpg">
     </body>
 </html>
